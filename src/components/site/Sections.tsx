@@ -5,6 +5,7 @@ import {
   Star, Mail, Instagram, ArrowRight, Sparkles,
 } from "lucide-react";
 import { useState } from "react";
+import logoAsset from "@/assets/webspyrx-logo.jpeg.asset.json";
 import { GlowOrbs, Particles } from "./Background";
 import { Reveal } from "./Reveal";
 
@@ -451,8 +452,8 @@ export function Footer() {
     <footer className="relative border-t border-border bg-card/40">
       <div className="max-w-7xl mx-auto px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
         <div className="lg:col-span-1">
-          <div className="flex items-center gap-2">
-            <span className="h-8 w-8 rounded-lg bg-gradient-brand" />
+          <div className="flex items-center gap-2.5">
+            <img src={logoAsset.url} alt="Webspyrx logo" className="h-9 w-9 rounded-lg object-cover ring-1 ring-white/10" />
             <span className="text-lg font-semibold">
               Web<span className="text-gradient-brand">spyrx</span>
             </span>
