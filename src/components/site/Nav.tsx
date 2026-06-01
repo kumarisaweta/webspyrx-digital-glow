@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/webspyrx-logo.jpeg.asset.json";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -27,8 +28,8 @@ export function Nav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2">
-          <span className="h-8 w-8 rounded-lg bg-gradient-brand animate-shimmer" />
+        <a href="#home" className="flex items-center gap-2.5">
+          <img src={logo.url} alt="Webspyrx logo" className="h-9 w-9 rounded-lg object-cover ring-1 ring-white/10" />
           <span className="text-lg font-semibold tracking-tight">
             Web<span className="text-gradient-brand">spyrx</span>
           </span>
